@@ -2,6 +2,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 /* Registration Button */
+/* ===============================
+   MOBILE VIEW (Max 768px)
+================================= */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .title p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    .rowitems {
+        grid-template-columns: 1fr;
+    }
+
+    .package-content,
+    .package2-content,
+    .pack5-content,
+    .location-content {
+        grid-template-columns: 1fr;
+    }
+
+    .container1 {
+        grid-template-columns: 1fr;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    video {
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+
+/* ===============================
+   TABLET VIEW (769px - 1024px)
+================================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .rowitems {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .package-content,
+    .package2-content,
+    .pack5-content,
+    .location-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container1 {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+}
+
+
+/* ===============================
+   LARGE DESKTOP (1200px+)
+================================= */
+@media (min-width: 1200px) {
+
+    .container,
+    .package,
+    .locations,
+    .newsletter,
+    .footer {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
 
 * {
     margin: 0;
